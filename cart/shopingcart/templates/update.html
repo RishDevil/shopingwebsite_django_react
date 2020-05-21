@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="update/{{n.title}}" method="post">
+  {%csrf_token %}
+
+
+<input type="text" value="{{n.title}}" name="title"><br>
+     <input type="text" value="{{n.discription}}" name="discription"><br>
+     <input type="text" value="{{n.price}}" name="price"><br>
+     <input type="text" value="{{n.loc}}" name="loc"><br>
+     <input type="text" value="{{n.summary}}" name="summary"><br>
+
+
+
+    <input type="submit">
+</form>
+</body>
+</html>

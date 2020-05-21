@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% load carttotal %}
+<div >
+
+
+    <p>{{object.title}}</p>
+<p>{{object.price}}</p>
+    <p><a href="{{object.get_absolute_url_cart}}">add to cart</a><div><a href='{{object.get_absolute_url_cartview}}'>total item in cart {{request.user|carttotal}}</a></div></p>
+    <p><a href="{% url 'logout' %}">logout</p>
+    </div>
+
+<br/>
+</body>
+</html>

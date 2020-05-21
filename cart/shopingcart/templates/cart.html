@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for i in o.item.all %}
+<div>
+     <p>{{i.product.title}}</p>
+<p>{{i.product.price}}</p>
+    <p>{{i.quantity}}</p>
+
+</div>
+<br/>
+{%endfor %}
+</body>
+</html>

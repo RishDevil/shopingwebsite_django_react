@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="login" method="post">
+      {%csrf_token %}
+    {% if name is not null%}
+    <input type="text" placeholder="username" name="uname" value={{name}}><br>
+     <input type="password" placeholder="pass" name="pass" value={{pass}}><br>
+    {%else%}
+    <input type="text" placeholder="username" name="uname" ><br>
+     <input type="password" placeholder="pass" name="pass"><br>
+    {%endif%}
+
+    <input type="submit">
+    <h3>
+        {%for message in messages%}
+        {{message}}
+
+        {%endfor%}
+
+
+    </h3>
+</form>
+</body>
+</html>

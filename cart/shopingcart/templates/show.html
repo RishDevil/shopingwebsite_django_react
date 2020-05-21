@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% for i in n%}
+<table >
+    <tr><td>title:</td><td> {{i.title}}</td></tr>
+   <tr><td>description: </td><td>{{i.discription}}</td></tr>
+   <tr><td> price: </td><td>{{i.price}}</td></tr>
+    <tr><td>location:</td><td> {{i.loc}}</td></tr>
+    <tr><td>summary: </td><td>{{i.summary}}</td></tr>
+</table><br>
+{%endfor%}
+</body>
+</html>
